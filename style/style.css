@@ -1,3 +1,11 @@
+/*css padrão*/
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*css do cabeçalho*/
+
 header {
 	background: #bbbbbb;
 	padding: 20px 0;
@@ -33,7 +41,91 @@ nav a:hover {
 	text-decoration: underline;
 }
 
-main {
+/*css da pagina inicial*/
+
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.imagem-beneficios {
+	width: 60%;
+}
+
+/*css da pagina produtos*/
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 10px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #c78c19;
+}
+
+.produtos li:active {
+	border-color: #088c19;
+}
+
+.produtos li:hover h2 {
+	font-size: 30px;
+}
+
+.produtos h2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0 0;
+}
+
+/*css da pagina contato*/
+
+.contato {
 	width: 940px;
 	margin: 0 auto;
 }
@@ -42,8 +134,7 @@ form {
 	margin: 40px 0;
 }
 
-form label,
-form legend {
+form label, form legend {
 	display: block;
 	font-size: 20px;
 	margin: 0 0 10px;
@@ -88,11 +179,12 @@ thead {
 	font-weight: bold;
 }
 
-th,
-td {
+th, td {
 	border: 1px solid #000000;
 	padding: 8px 15px;
 }
+
+/*css do rodapé*/
 
 footer {
 	text-align: center;
