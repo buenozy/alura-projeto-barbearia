@@ -47,6 +47,13 @@ nav a:hover {
 	width: 100%;
 }
 
+.principal {
+	padding: 3em 0;
+	background: #fefefe;
+	width: 940px;
+	margin: 0 auto;
+}
+
 .titulo-principal {
 	text-align: center;
 	font-size: 2em;
@@ -73,7 +80,13 @@ nav a:hover {
 }
 
 .mapa {
-	padding: 3em 0;
+	padding: 0;
+	background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+	margin: 0 auto;
 }
 
 .mapa p {
@@ -83,6 +96,7 @@ nav a:hover {
 
 .beneficios {
 	padding: 3em 0;
+	background: #888888;
 }
 
 .conteudo-beneficios {
@@ -104,8 +118,19 @@ nav a:hover {
 	font-weight: bold;
 }
 
+.itens:before {
+	content: "🟊";
+}
+
 .imagem-beneficios {
 	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.3; 
 }
 
 .video {
@@ -119,6 +144,7 @@ nav a:hover {
 	width: 940px;
 	margin: 0 auto;
 	padding: 50px 0;
+	cursor: pointer;
 }
 
 .produtos li {
@@ -233,4 +259,77 @@ footer {
 	color: #ffffff;
 	font-size: 13px;
 	margin: 20px 0;
+}
+
+/*css responsivo*/
+
+@media screen and (max-width: 480px) {
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos, .contato, table {
+		width: auto;
+		padding: 0;
+	}
+	
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.titulo-principal {
+		font-size: 25px;
+		font-weight: bold;
+		padding: 5px;
+	}
+
+	section.principal {
+		padding: 2px;
+	}
+
+	section.mapa, p {
+		padding: 0;
+	}
+
+	section.beneficios {
+		display:inline-block;
+		text-align: center;
+	}
+
+	.lista-beneficios, .imagem-beneficios, .video {
+		align-items: center;
+		padding: 2px;
+		width: 95%;
+	}
+
+	.itens:after {
+		content: "🟊";
+	}
+
+	.produtos li {
+		display: block;
+		width: 20em;
+		margin: 1em auto;
+    }
+
+	form, fieldset {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+        align-items: center;
+	}
+
+	legend, label.checkbox {
+		text-align: center;
+		padding-top: 5px;
+	}
+
+	table {
+		margin: 0 auto;
+		margin-bottom: 2em;
+	}
+
+	input.enviar {
+		width: 70%;
+    }
 }
